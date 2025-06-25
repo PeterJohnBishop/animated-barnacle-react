@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-section {
+  height: 80vh;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  height: 100%;
+  padding: 0 2.5%;
+}
+
+.scroll-card {
+  flex: 0 0 95vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-card .card-body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.markdown-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+}
