@@ -4,7 +4,7 @@ export default function MainCards() {
         return (
       <Container id="cards" className="my-5">
         <Row>
-          {["One", "Two", "Three"].map((title, i) => (
+          {["Frontend", "Backend", "API"].map((title, i) => (
             <Col md={4} key={i} className="mb-4">
               <Card>
                 <Card.Img variant="top" src={`https://via.placeholder.com/300x200?text=Card+${title}`} />
